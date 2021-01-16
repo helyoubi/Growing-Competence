@@ -1,8 +1,12 @@
 package fr.gc.tests;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+
+import fr.gc.pojo.CalcClass;
 
 public class ListTest {
 
@@ -36,9 +40,18 @@ public class ListTest {
 	      System.out.println("Aprés modification: " + ll);
 	      
 	      System.out.println("-------------------------------------------------------------");
-	      /**List (ArrayList)**/
-	      List<String> listDeString = Arrays.asList("cle","cle2","cle3","cle4","cle5","cle6");
-	      System.out.println(listDeString.size());
+	      /**List (CalcClass)**/
+			List<CalcClass> listDeString = new ArrayList<>(5);		
+			listDeString.add(new CalcClass("cle", BigDecimal.valueOf(10)));
+			listDeString.add(new CalcClass("cle1", BigDecimal.valueOf(11)));
+			listDeString.add(new CalcClass("cle2", BigDecimal.valueOf(12)));
+			//indexOf récupère le premier index de l element et lastIndexOf le dernier index de l element
+			//index 2 => cle2
+			System.out.println(listDeString.get(2));
+			
+	      
+	      
 	}
+
 
 }
