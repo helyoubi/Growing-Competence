@@ -1,10 +1,13 @@
 package fr.gc.tests;
 
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
-public class LinkedListTest {
+public class ListTest {
 
 	public static void main(String[] args) {
+		/**LinkdedList**/
 		// déclaration de linked list
 	      LinkedList<String> ll = new LinkedList<String>();
 	      // remplir les éléments dans linked list
@@ -31,7 +34,11 @@ public class LinkedListTest {
 	      int index = ll.indexOf(first);
 	      ll.set(index, first + " Nouveau");
 	      System.out.println("Aprés modification: " + ll);
-
+	      
+	      System.out.println("-------------------------------------------------------------");
+	      /**List (ArrayList)**/
+	      List<String> listDeString = Arrays.asList("cle","cle2","cle3","cle4","cle5","cle6");
+	      System.out.println(listDeString.size());
 	}
 
 }

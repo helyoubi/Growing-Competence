@@ -4,13 +4,12 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import fr.gc.pojo.CalcClass;
 import fr.gc.pojo.CalcClass2;
 
-public class MainTest {
+public class CalcTest {
 
 	public static void main(String[] args) {
 		List<BigDecimal> listBigDec = Arrays.asList(BigDecimal.ONE,BigDecimal.valueOf(2),BigDecimal.valueOf(3),BigDecimal.valueOf(4));
